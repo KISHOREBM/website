@@ -1,6 +1,7 @@
 body{
     color:white;
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://wallpapercave.com/wp/wp6957233.jpg);
+    z-index: 10;
 }
 ul{
     display: flex;
@@ -112,4 +113,11 @@ img{
 .item:hover{
     transform: scale(1.2);
     transition: 0.5s;
+}
+.div-pop{
+    background-color: rgba(0,0, 0, 0.75);
+    border-radius: 25px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0, 0);
+    z-index: 20;
 }
