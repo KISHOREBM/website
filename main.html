@@ -4,32 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="harry.css"/>
+    <link rel="stylesheet" href="main.css"/>
     <script>
         function refresh(){
             location.reload();
         }
+        function baccol(){
+                document.body.style.backgroundColor="black";
+            
+        }
     </script>
 </head>
-<body>
+<body id="mai">
     <div class="container">
         <img src="https://www.creativefabrica.com/wp-content/uploads/2019/02/Simple-room-interior-logo-by-sabavector.jpg" class="logo" />
         <input type="text" class="searchbox" placeholder="SEARCH"/>
         <img src="search-w.png" class="image" onclick="refresh()"/>
         <ul>
-            <li class="item"><a href="#">home</a></li>
-            <li class="item"><a href="#">last</a></li>
-            <li class="item"><a href="#">kitchen</a></li>
-            <li class="item"><a href="#">contact</a></li>
-            <li class="item"><a href="#">bedroom</a></li>
+            <li class="item"><a href="#" >home</a></li>
+            <li class="item"><a href="#" >last</a></li>
+            <li class="item"><a href="#" >kitchen</a></li>
+            <li class="item"><a href="#" >contact</a></li>
+            <li class="item"><a href="#" >bedroom</a></li>
             
         </ul>
-        
+        <div popover id="div-pop" class="div-pop" >
+            <h1>Thank you for subscribing 🎉🎉</h1>
+            <button popovertarget="div-pop" popovertargetaction="hide">Close</button>
+        </div>
     </div><hr>
     <div class="second">
         <h1>welcome to the website</h1><br>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sint necessitatibus magni, adipisci in iusto eum quam iste sit voluptas! In fuga, error ratione amet pariatur quam doloremque sequi consectetur.</p>
-        <div><button>subscribe</button><button>click</button></div>
+        <div><button popovertarget="div-pop" popovertargetaction="show" onclick="baccol()">subscribe</button><button>click</button></div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script>
